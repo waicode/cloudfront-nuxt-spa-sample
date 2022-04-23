@@ -1,6 +1,6 @@
 # cloudfront-nuxt-spa-sample
 
-![cloudfront-nuxt-spa-sample](https://main.d2elhmbkojzkli.amplifyapp.com/amplify-nuxt-spa-sample.png "cloudfront-nuxt-spa-sample")
+![cloudfront-nuxt-spa-sample](https://cloudfront-nuxt-spa-sample.desr.blue/cloudfront-nuxt-spa-sample.png "cloudfront-nuxt-spa-sample")
 
 <https://cloudfront-nuxt-spa-sample.desr.blue/>
 
