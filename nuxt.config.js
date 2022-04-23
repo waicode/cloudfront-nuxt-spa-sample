@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'croudfront-nuxt-spa-sample',
+    title: 'cloudfront-nuxt-spa-sample',
     htmlAttrs: {
       lang: 'en',
     },

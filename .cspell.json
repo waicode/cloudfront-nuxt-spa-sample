@@ -9,7 +9,15 @@
       "dictionaries": ["html", "fonts", "typescript", "javascript", "css"]
     }
   ],
-  "words": ["browserlistrc", "nuxt", "nuxtignore", "nuxtjs", "vuex", "waicode"],
+  "words": [
+    "browserlistrc",
+    "cloudfront",
+    "nuxt",
+    "nuxtignore",
+    "nuxtjs",
+    "vuex",
+    "waicode"
+  ],
   "ignorePaths": [
     ".vscode",
     ".devcontainer",

@@ -1,4 +1,4 @@
-# croudfront-nuxt-spa-sample
+# cloudfront-nuxt-spa-sample
 
 ## Build Setup
 
