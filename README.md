@@ -9,6 +9,24 @@
 * Github ActionsでCDを定義し、mainブランチが更新されるとS3に最新リソースが反映されます
   * `Cloudfront`のディストリビューションと`S3`の配信先バケットは事前に作成しておく必要があります
 
+* SPAモードのNuxtは`/index.html`がキャッシュされるとエラーが起きるのでキャッシュから除外します
+
+```Shell
+aws s3 sync --delete dist/ s3://${{ secrets.AWS_S3_BUCKET_NAME }} --include "index.html" --cache-control "no-cache"
+```
+
+* デプロイ時にキャッシュ削除のリクエストも可能です
+
+```Shell
+aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths '/index.html'
+```
+
+* より安全に、デプロイ時にすべてのキャッシュをリセットすることもできます
+
+```Shell
+aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*'
+```
+
 * その他のファイルは`create-nuxt-app`コマンドのデフォルト生成ファイルから大きな変更はしていません
 
 ```Shell
