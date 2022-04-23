@@ -1,6 +1,7 @@
 name: Deploy to Amazon S3
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
