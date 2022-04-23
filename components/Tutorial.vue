@@ -59,7 +59,7 @@
             rel="nofollow noopener"
             class="button--doc text-green-500 hover:underline"
             >Github Actions</a
-          >を使い、mainブランチが更新されると最新ソースが自動的に反映されます。<br />
+          >を使い、mainブランチが更新されると自動的に最新のソースが反映されます。<br />
           CloudfrontディストリビューションとS3バケットは事前に作成しておく必要があります。
         </p>
         <p class="mt-4 pt-4 text-gray-800 border-t border-dashed">
